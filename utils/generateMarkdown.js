@@ -1,83 +1,61 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  var licBadge = "";
-  switch (license) {
-    case "Mozilla Public License 2.0":
-      licBadge = `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](${renderLicenseLink(license)})`;
-      break;
-    case "Apache License 2.0":
-      licBadge = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](${renderLicenseLink(
-        license
-      )})`;
-      break;
-    case "MIT License":
-      licBadge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](${renderLicenseLink(
-        license
-      )})`;
-      break;
-    case "The Unlicense":
-      licBadge = `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](${renderLicenseLink(
-        license
-      )})`;
-      break;
+  if (!license) {
+    return '';
   }
-  return licBadge;
+
+  switch (license) {
+    case 'Mozilla':
+      return '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)';
+      break;
+    case 'Apache':
+      return '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
+      break;
+    case 'MIT':
+      return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+      break;
+    case 'Unlicense':
+      return '[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)';
+      break;
+      default:
+        return'';
+  }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {
-  var licLink = "";
-  switch (license) {
-    case "Mozilla Public License 2.0":
-      licLink = "https://opensource.org/licenses/MPL-2.0";
-      break;
-    case "Apache License 2.0":
-      licLink = "https://opensource.org/licenses/Apache-2.0";
-      break;
-    case "MIT License":
-      licLink = "https://opensource.org/licenses/MIT";
-      break;
-    case "The Unlicense":
-      licLink = "http://unlicense.org/";
-      break;
-  }
-  return licLink;
-}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {
-  return `This application is operating under the following license: **${license}**.  
-\n\nFurther information regarding this license, to include the required notice, can be read by navigating to the following link: ${renderLicenseLink(license)}.`;
-}
 
 // TODO: Create a function to generate markdown for README
 
 function generateMarkdown(data) {
   return `
   # ${data.title}
-  ${renderLicenseBadge(data.license)}
-  ## Description
- 
-  ${data.description}
+  \n ${renderLicenseBadge(data.license)}
+
   ## Table of Contents
-  [Installation](#installation)
-  [Usage](#usage)
-  [License](#license)
-  [Contributing](#contributing)
-  [Tests](#tests)
-  [Questions](#questions)
- 
+  \n -[Description](#Description)
+  \n -[Installation](#Installation)
+  \n -[Usage](#Usage)
+  \n -[Credits](#Credits)
+  \n -[Licenses](#Licenses)
+  \n -[Contributions](#Contributions)
+  \n -[Testing](#Testing)
+  \n -[Site-URL](#Site-URL)
+  \n -[Screenshots](#Screenshots)
+
+  ## Description
+  ${data.description}
+
   ## Installation
-   ${data.installation}
+  ${data.installation}
   
-   ## Usage
-    ${data.usage}
+  ## Usage
+  ${data.usage}
+
+  ## Credits
+  ${data.credits}
   
   ## License
-  ${renderLicenseSection(data.license)}
+  This project is licensed under the ${renderLicenseBadge(data.license)} license. Click on the badge above for more information.
   
   ## Contributing
   ${data.contribute}
@@ -85,15 +63,18 @@ function generateMarkdown(data) {
   ## Tests
   ${data.testing}
 
-  // ## Questions
-  // Any questions regarding this project can be answered by contacting me through my GitHub profile or by email:
-  // \nGitHub Profile: https://github.com/${data.ghUsername}
-  // \nemail: ${data.email}`;
+  ## Site-URL
+  ${data.URL}
+
+  ## Screenshots
+  ${''}
+
+  ## Questions?
+  Any questions regarding this project can be answered by contacting me through my GitHub Profile at https://github.com/${data.username} or at my email address at ${data.email}. 
+
+  -Thank you
+
+`;
 }
 
-module.exports = {
-  renderLicenseBadge,
-  renderLicenseLink,
-  renderLicenseSection,
-  generateMarkdown
-}
+module.exports = generateMarkdown;
