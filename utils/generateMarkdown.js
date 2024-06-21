@@ -31,7 +31,7 @@ function generateMarkdown(data) {
   # ${data.title}
   \n ${renderLicenseBadge(data.license)}
 
-  ## Table of Contents
+  # Table of Contents
   \n -[Description](#Description)
   \n -[Installation](#Installation)
   \n -[Usage](#Usage)
@@ -42,34 +42,34 @@ function generateMarkdown(data) {
   \n -[Site-URL](#Site-URL)
   \n -[Screenshots](#Screenshots)
 
-  ## Description
+  # Description
   ${data.description}
 
-  ## Installation
+  # Installation
   ${data.installation}
   
-  ## Usage
+  # Usage
   ${data.usage}
 
-  ## Credits
+  # Credits
   ${data.credits}
   
-  ## License
+  # License
   This project is licensed under the ${renderLicenseBadge(data.license)} license. Click on the badge above for more information.
   
-  ## Contributing
+  # Contributing
   ${data.contribute}
   
-  ## Tests
+  # Tests
   ${data.testing}
 
-  ## Site-URL
+  # Site-URL
   ${data.URL}
 
-  ## Screenshots
+  # Screenshots
   ${''}
 
-  ## Questions?
+  # Questions?
   Any questions regarding this project can be answered by contacting me through my GitHub Profile at https://github.com/${data.username} or at my email address at ${data.email}. 
 
   -Thank you
