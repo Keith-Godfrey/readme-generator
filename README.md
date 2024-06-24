@@ -1,5 +1,5 @@
 
-  # README generator
+  # README Generator
   
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -24,7 +24,7 @@
  -[Screenshots](#Screenshots)
 
   # Description
-  This is a README file generator, that will help you create your file quickly, by taking you through a series of questions. This application will create a header in Markdown format for each question and any information that you passed along with it and copy it and create a README.md file. It will also create a table of contents that you can click on each link, it will take you to that specific category in the README file.
+  This is a README file generator, that will help you create your file quickly, by taking you through a series of questions. This application will create a header in Markdown format for each question and any information that you passed along with it and copy it and create a README.md file. It will also create a table of contents that you can click on each link, it will take you to that specific category in the README file. 
 
   # Installation
   undefined
@@ -42,12 +42,13 @@
   Please provide any ideas, best practices or any encounters you have had (good or bad) with experiences with other README files that could be used to update this one and make it a better README generator for future projects.
   
   # Tests
-  No testing done on this project.
+  No testing was done on this application.
 
   # Site-URL
   undefined
 
   # Screenshots
+  <iframe src="https://drive.google.com/file/d/1XCBOgRKodtlPaWhRtCCR4iif8S7J0Q_L/preview" width="640" height="480"></iframe>
   
 
   # Questions?
