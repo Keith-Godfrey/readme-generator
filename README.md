@@ -48,8 +48,7 @@
   undefined
 
   # Screenshots
-  <iframe src="https://drive.google.com/file/d/1XCBOgRKodtlPaWhRtCCR4iif8S7J0Q_L/preview" width="640" height="480"></iframe>
-  
+  [Recording of README Gen Demo.webm](<https://drive.google.com/file/d/1XCBOgRKodtlPaWhRtCCR4iif8S7J0Q_L/view?usp=sharing>)
 
   # Questions?
   Any questions regarding this project can be answered by contacting me through my GitHub Profile at https://github.com/godfrk85 or at my email address at keith.godfrey23@gmail.com. 
