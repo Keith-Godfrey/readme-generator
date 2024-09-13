@@ -1,7 +1,7 @@
 
-  # README Generator
+  # test
   
- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+ [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
   # Table of Contents
   
@@ -24,7 +24,7 @@
  -[Screenshots](#Screenshots)
 
   # Description
-  This is a README file generator, that will help you create your file quickly, by taking you through a series of questions. This application will create a header in Markdown format for each question and any information that you passed along with it and copy it and create a README.md file. It will also create a table of contents that you can click on each link, it will take you to that specific category in the README file. 
+  test
 
   # Installation
   undefined
@@ -33,25 +33,25 @@
   undefined
 
   # Credits
-  Mighty Morphin Developer Rangers Team
+  test
   
   # License
-  This project is licensed under the [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) license. Click on the badge above for more information.
+  This project is licensed under the [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0) license. Click on the badge above for more information.
   
   # Contributing
-  Please provide any ideas, best practices or any encounters you have had (good or bad) with experiences with other README files that could be used to update this one and make it a better README generator for future projects.
+  test
   
   # Tests
-  No testing was done on this application.
+  test
 
   # Site-URL
   undefined
 
   # Screenshots
-  [Recording of README Gen Demo.webm](<https://drive.google.com/file/d/1XCBOgRKodtlPaWhRtCCR4iif8S7J0Q_L/view?usp=sharing>)
+  
 
   # Questions?
-  Any questions regarding this project can be answered by contacting me through my GitHub Profile at https://github.com/godfrk85 or at my email address at keith.godfrey23@gmail.com. 
+  Any questions regarding this project can be answered by contacting me through my GitHub Profile at https://github.com/te or at my email address at ste. 
 
   -Thank you
 
